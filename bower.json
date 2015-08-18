@@ -1,0 +1,24 @@
+{
+  "name": "angularseed",
+  "description": "A starter project for AngularJS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/angular/angularseed",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.3.15",
+    "jquery": "~2.1.3",
+    "ui-router": "~0.2.13",
+    "underscore": "~1.8.3",
+    "less": "~2.5.0",
+    "angular-cookies": "~1.3.15",
+    "bootstrap": "~3.3.4",
+    "angular-bootstrap": "~0.13.0",
+    "angular-animate": "~1.4.2",
+    "ua-parser-js": "~0.7.7",
+    "ios-dblclick": "~0.1.0"
+  },
+  "resolutions": {
+    "angular": "1.3.17"
+  }
+}

@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+var debug = require('debug')('SuiviCollecteNode')
+var app = require('../app')
+var express = require('express')()
+
+express.set('port', process.env.PORT || 4000)
+
+express.use('/',app)
+
+var server = express.listen(express.get('port'), function() {
+  debug('Express server listening on port ' + server.address().port);
+});

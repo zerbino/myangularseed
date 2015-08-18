@@ -1,0 +1,39 @@
+{
+  "name": "angular-seed",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A starter project for AngularJS",
+  "repository": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.3.1",
+    "grunt": "^0.4.5",
+    "http-server": "^0.6.1",
+    "karma": "~0.10",
+    "karma-junit-reporter": "^0.2.2",
+    "protractor": "^1.1.1",
+    "shelljs": "^0.2.6"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "postinstall": "bower install",
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update",
+    "start-webdriver": "webdriver-manager start",
+    "preprotractor": "npm run update-webdriver & start npm run start-webdriver & timeout 3 & start npm start & timeout 5",
+    "protractor": "protractor e2e-tests/protractor.conf.js",
+    "test": "npm run protractor",
+    "start": "supervisor ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "bower": "^1.4.1",
+    "connect-mongo": "^0.8.1",
+    "cookie-parser": "^1.3.5",
+    "debug": "^2.2.0",
+    "ejs": "^2.3.3",
+    "express": "^4.12.3",
+    "mysql": "^2.6.2",
+    "q": "^1.4.1"
+  }
+}
